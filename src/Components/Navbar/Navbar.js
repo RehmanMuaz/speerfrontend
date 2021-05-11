@@ -1,4 +1,4 @@
-import '../App.css';
+import './Navbar.css';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {

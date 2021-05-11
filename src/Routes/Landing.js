@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import Navbar from '../Components/Navbar/Navbar';
+import Three from '../Components/ThreeJS/Three';
 
 import '../App.css';
-import Navbar from '../Components/Navbar';
-import Three from '../Components/ThreeJS/Three';
+import '../Components/Button.css';
 
 // Creates a dot radio button
 const Dot = ({ active, count, onClick }) => {
@@ -25,7 +26,7 @@ function Landing() {
 			<div className='landing-wrap'>
 				<h1>INTERACTIVE CONCERT EXPERIENCE</h1>
 				<h2>Experience your favourite artists like never before and from the comfort of your own home.</h2>
-				<a href="#" className="btn-cta">TRY IT NOW</a>
+				<a href="/" className="btn-cta">TRY IT NOW</a>
 			</div>
 			<div className = 'dot-wrap'>
 				<div className='dot-container'>
