@@ -1,7 +1,6 @@
-import React, { useRef, useState, useEffect } from 'react'
-import { ShaderMaterial, Vector2, Texture, TextureLoader, GLSL3, Clock, PlaneGeometry, Mesh } from 'three';
+import React, { useRef, useState } from 'react'
+import { Vector2, TextureLoader, GLSL3 } from 'three';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useSpring, animated } from 'react-spring';
 
 function Three(props) {
     return (
@@ -16,10 +15,6 @@ function Three(props) {
 function Container({url1, url2, url3, id, ...props}) {
   	// This reference will give us direct access to the mesh
   	const mesh = useRef();
-
-	// Set up state for the hovered and active state
-	const [hovered, setHover] = useState(false)
-	const [active, setActive] = useState(false)
 
 	// GL vertex shader code
 	const vertexShader = `
@@ -111,7 +106,8 @@ function Container({url1, url2, url3, id, ...props}) {
 				scale={active ? 1 : 1}
 				//onClick={(event) => setActive(!active)}
 				//onPointerOver={(event) => setHover(true)}
-				onPointerOut={(event) => setHover(false)}>
+				//onPointerOut={(event) => setHover(false)}
+				>
 				<planeGeometry args={[ 1920 , 1195 ]}/>
 				<shaderMaterial uniforms={uniforms} fragmentShader={fragmentShader} vertexShader={vertexShader} glslVersion={GLSL3} needsUpdate='true'/>
 			</mesh>

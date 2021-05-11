@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from '../Components/Navbar/Navbar';
 import Three from '../Components/ThreeJS/Three';
 
 import '../App.css';
