@@ -30,14 +30,151 @@ nav {
   padding-left: 83px;
   padding-top: 86px;
   display: inline-flex;
+  align-items: center;
 }
+
 #nav-title {
   padding: 0;
-  margin: 0px 10px;
+  margin: 0px;
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
+}
+
+#landing-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.landing-wrap{
+  flex: 0;;
+  margin-top: 442px;
+  display:block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.webgl {
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+
+h1 {
+  position: relative;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 6.5px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
+}
+
+h2 {
+  position: relative;
+  width: 820px;
+  margin-top: 0px;
+  margin-bottom: 43px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 3.2px;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
 }
 
 #burger {
   width:56px;
   height: 34px;
+  fill: white;
+  transform: scale(2.1,1.5); 
+  margin-right: 37.87px;
+  transition: ease-in-out 0.125s;
 }
 
+#burger:hover {
+  transform: scale(2.6,2.0); 
+}
+
+.btn-cta {
+  height: 79px;
+  width: 274px;
+  border-radius: 79px;
+  font-size: 23px;
+  line-height: 28px;
+  font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2.3px;
+  overflow: hidden;
+  position: relative;
+  padding: 25px 63px;
+  color: white;
+  background: linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease-in-out infinite;
+
+  transition: all ease-in-out 0.5s;
+}
+
+.btn-cta:hover {
+  box-shadow: inset 0 0 50px #fff;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+
+.dot-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+
+.dot-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.dot {
+  height: 17px;
+  width: 17px;
+  margin-right: 9px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.dot_active {
+  background-color: rgba(255,255,255,1);
+}
