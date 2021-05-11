@@ -103,7 +103,7 @@ function Container({url1, url2, url3, id, ...props}) {
 			<mesh
 				{...props}
 				ref={mesh}
-				scale={active ? 1 : 1}
+				scale={1}
 				//onClick={(event) => setActive(!active)}
 				//onPointerOver={(event) => setHover(true)}
 				//onPointerOut={(event) => setHover(false)}
