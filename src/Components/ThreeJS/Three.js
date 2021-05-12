@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { Vector2, TextureLoader, GLSL3 } from 'three';
 import { Canvas, useFrame } from '@react-three/fiber';
 

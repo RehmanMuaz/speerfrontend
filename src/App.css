@@ -14,33 +14,6 @@
   color: white;
 }
 
-nav {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: fit-content;
-  position: absolute;
-  z-index: 1;
-
-  display: flex;
-  justify-content: flex-start;
-}
-
-.nav-container {
-  padding-left: 83px;
-  padding-top: 86px;
-  display: inline-flex;
-  align-items: center;
-}
-
-#nav-title {
-  padding: 0;
-  margin: 0px;
-  font-size: 48px;
-  line-height: 57px;
-  font-weight: normal;
-  font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
-}
 
 #landing-page {
   width: 100%;
@@ -109,43 +82,6 @@ h2 {
   transform: scale(2.6,2.0); 
 }
 
-.btn-cta {
-  height: 79px;
-  width: 274px;
-  border-radius: 79px;
-  font-size: 23px;
-  line-height: 28px;
-  font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: 2.3px;
-  overflow: hidden;
-  position: relative;
-  padding: 25px 63px;
-  color: white;
-  background: linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%);
-  background-size: 400% 400%;
-  animation: gradient 10s ease-in-out infinite;
-
-  transition: all ease-in-out 0.5s;
-}
-
-.btn-cta:hover {
-  box-shadow: inset 0 0 50px #fff;
-}
-
-@keyframes gradient {
-0% {
-  background-position: 0% 50%;
-}
-50% {
-  background-position: 100% 50%;
-}
-100% {
-  background-position: 0% 50%;
-}
-}
-
 
 .dot-wrap {
   flex: 1;
@@ -177,4 +113,51 @@ h2 {
 
 .dot_active {
   background-color: rgba(255,255,255,1);
+}
+
+@media only screen and (max-width: 1300px) {
+  .landing-wrap {
+    margin-top: 275px;
+  } 
+
+  h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+
+  h2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .landing-wrap {
+    margin-top: 225px;
+  } 
+
+  #nav-title {
+    font-size: 24px !important;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
 }

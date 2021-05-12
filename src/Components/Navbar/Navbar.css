@@ -25,4 +25,9 @@ nav {
     font-weight: normal;
     font-family: 'Helvetica Neue', 'Liberation Sans', Roboto, Arial, sans-serif;
   }
-  
+
+  @media only screen and (max-width: 450px) {
+    #nav-title {
+      font-size: 24px !important;
+    }
+  }
